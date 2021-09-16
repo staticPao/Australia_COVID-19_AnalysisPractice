@@ -1,1 +1,0 @@
-# unityWindowCapture-Zihao-
