@@ -1,11 +1,11 @@
-#COMP 5070
+
 #Zihao Huang
 
 library(ggplot2)
 library(dplyr)
 
 #Load data,the data file need in the current working directory
-load(file = "examdata.RData")
+load(file = "data.RData")
 #print(getwd())
 
 #Avoid scientific notation in charts
@@ -13,7 +13,7 @@ options(scipen = 10)
 
 Sys.setlocale("LC_TIME","English")
 
-###Question 1. ¡°New¡± pandemic of COVID-19
+###Question 1. Â¡Â°NewÂ¡Â± pandemic of COVID-19
 
 all_cases <- filter(all_cases,!is.na(NEW))
 # Extract data for each state from the summary table(all_cases)
