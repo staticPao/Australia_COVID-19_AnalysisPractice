@@ -1,4 +1,4 @@
-#COMP 5070
+
 #Zihao Huang
 
 library(rvest)
@@ -6,7 +6,7 @@ library(stringr)
 
 #Define a function for collecting case data from a web page. 
 #The input to the function is the table type and state abbreviation,
-#Specifically,the types of tables include£ºdaily-cases / daily-vaccinations / daily-hospitalised / daily-active-cases
+#Specifically,the types of tables includeÂ£Âºdaily-cases / daily-vaccinations / daily-hospitalised / daily-active-cases
 getWebData <- function(Table,State){
   
   #load web page
