@@ -13,7 +13,7 @@ options(scipen = 10)
 
 Sys.setlocale("LC_TIME","English")
 
-###Question 1. ¡°New¡± pandemic of COVID-19
+### 1. ¡°New¡± pandemic of COVID-19
 
 all_cases <- filter(all_cases,!is.na(NEW))
 # Extract data for each state from the summary table(all_cases)
@@ -101,7 +101,7 @@ ggplot(cases_pre_latest , aes(x = DATE, y = CASES_PRE_1000, group = STATE, col =
   geom_line(size = 0.8,na.rm = TRUE) + theme_bw() + labs(x = "Date",y = "Cumulative cases(pre 1,000)")
 
 
-###Question 2. Vaccination rates
+### 2. Vaccination rates
 
 #Merge vaccine table and case table with two columns of information based on state and date
 vaccinations_cases <- merge(all_vaccinations,all_cases,by = c("STATE","DATE"),all = FALSE)
@@ -149,7 +149,7 @@ ggplot(wa_weekly_vc) +
   labs(x = "Week (week number) ",y = "Cases") + scale_x_continuous(breaks=seq(0,nrow(wa_weekly_vc),10))
 
 
-###Question 3. Hospitalisations 
+### 3. Hospitalisations 
 
 #Merge a table containing hospitalized cases and daily active cases based on two columns of information, state and date
 hospital_active <- merge(all_hospitalised, all_active,by = c("STATE","DATE"),all = FALSE)
