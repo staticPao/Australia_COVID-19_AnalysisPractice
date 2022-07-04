@@ -1,4 +1,4 @@
-#COMP 5070
+
 #Zihao Huang
 
 library(shiny)
